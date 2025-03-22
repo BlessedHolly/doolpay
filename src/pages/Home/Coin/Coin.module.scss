@@ -1,0 +1,35 @@
+.container {
+  text-align: center;
+}
+
+.tradeTableContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tradeTable {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+  }
+}
+
+.buy {
+  background-color: #303b33;
+  color: rgb(44, 131, 44);
+}
+
+.sell {
+  background-color: #472323;
+  color: rgb(185, 16, 16);
+}

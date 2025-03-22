@@ -1,0 +1,15 @@
+$main-dark-color: rgb(31, 31, 31);
+
+.header {
+  margin-bottom: 30px;
+}
+
+.content {
+  min-height: 100vh;
+  background-color: $main-dark-color;
+
+  &.content-light {
+    background-color: rgb(235, 235, 235);
+    color: $main-dark-color;
+  }
+}

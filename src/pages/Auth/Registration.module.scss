@@ -1,0 +1,126 @@
+.registration-container {
+  margin: 0 auto;
+  width: max-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -7vh;
+}
+
+.register-title {
+  margin-bottom: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration {
+  width: 300px;
+}
+
+.registration-btn {
+  width: 130px;
+  height: 50px;
+  color: white;
+  background-color: rgb(65, 65, 65);
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.field-container {
+  height: 40px;
+  position: relative;
+}
+
+.field-container {
+  margin-top: 10px;
+}
+
+.text-input {
+  color: #b6b6b6;
+  position: absolute;
+  top: 4px;
+  transition: top 0.1s linear;
+  cursor: text;
+  user-select: none;
+}
+
+.field-container:has(.field:focus) .text-input,
+.field-container:has(.field:not(:placeholder-shown)) .text-input {
+  font-size: 0.7rem;
+  top: -8px;
+}
+
+.field {
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #b6b6b6;
+  width: 300px;
+  height: 35px;
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+}
+
+.field:focus {
+  border-color: #646d6d;
+}
+
+input:focus {
+  outline: none;
+}
+
+.other-action {
+  margin-top: 10px;
+  display: flex;
+
+  a {
+    color: rgb(102, 102, 102);
+    margin-left: 3px;
+
+    &:hover {
+      color: rgb(87, 87, 87);
+    }
+  }
+}
+
+.field-container-password {
+  position: relative;
+}
+
+.hide-show-password {
+  position: absolute;
+  top: 0;
+  left: 265px;
+}
+
+.hide-show-password-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.error {
+  color: rgb(223, 0, 0);
+  position: absolute;
+  top: 19px;
+  left: 307px;
+  width: max-content;
+}
+
+@media (max-width: 640px) {
+  .error {
+    left: 210px;
+  }
+
+  .field {
+    width: 200px;
+  }
+
+  .hide-show-password {
+    left: 165px;
+  }
+}

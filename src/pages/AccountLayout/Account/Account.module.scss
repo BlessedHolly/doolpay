@@ -1,0 +1,162 @@
+.userInformation {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-areas: "avatar details";
+  gap: 20px;
+  align-items: center;
+  width: max-content;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.details {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.email {
+  font-size: 1rem;
+  color: gray;
+}
+
+.sum {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.textLink {
+  margin: 0 auto;
+}
+
+.accountActivity {
+  margin-top: 30px;
+}
+
+.accountActivity h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.accountActivity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accountActivity li {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
+.card {
+  margin-top: 35px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.card.moveLeft {
+  transform: translateX(220px);
+}
+
+.cardImg {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.replenish {
+  position: absolute;
+  top: 140px;
+  left: 225px;
+  font-size: 0.8rem;
+  color: rgb(111, 114, 114);
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.replenishForm {
+  position: absolute;
+  top: 518px;
+  left: 12vw;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.inputReplenish {
+  width: 100px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  background-color: rgb(66, 66, 66);
+  font-size: 0.8rem;
+  height: 30px;
+  color: rgb(160, 160, 160);
+
+  &::placeholder {
+    color: rgb(160, 160, 160);
+  }
+}
+
+.submitButton {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  height: 30px;
+  font-size: 0.8rem;
+  background-color: rgb(85, 87, 87);
+  color: rgb(160, 160, 160);
+}
+
+.fallback {
+  position: absolute;
+  top: -30px;
+  left: 3px;
+}
+
+@media (min-width: 400px) {
+  .replenishForm {
+    left: 95px;
+  }
+}
+
+@media (min-width: 768px) {
+  .replenishForm {
+    left: 17vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .replenishForm {
+    left: 18vw;
+  }
+}
+
+@media (min-width: 1380px) {
+  .card {
+    top: -200px;
+    left: 580px;
+  }
+
+  .replenishForm {
+    top: 319px;
+    left: 862px;
+  }
+
+  .accountActivity {
+    margin-top: -100px;
+  }
+}
+
+.wallet {
+  position: absolute;
+  bottom: 40px;
+}

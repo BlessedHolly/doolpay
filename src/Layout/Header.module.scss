@@ -1,0 +1,38 @@
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(24, 24, 24);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-light {
+  background-color: rgb(184, 184, 184);
+}
+
+.head {
+  display: flex;
+  margin-top: 30px;
+}
+
+.name {
+  margin-right: 5vw;
+  color: rgb(83, 50, 99);
+}
+
+.name-light {
+  color: rgb(44, 192, 192);
+}
+
+.link-light {
+  color: rgb(156, 87, 30);
+}
+
+.active-link-light {
+  color: rgb(240, 84, 12);
+}

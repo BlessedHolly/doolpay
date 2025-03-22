@@ -1,0 +1,32 @@
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  background-color: rgb(52, 53, 52);
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+
+  color: rgb(192, 201, 201);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgb(44, 44, 44);
+  }
+
+  &.button-light {
+    background-color: rgb(184, 184, 184);
+    color: rgb(44, 44, 44);
+    &:hover {
+      background-color: rgb(141, 139, 139);
+    }
+  }
+}
+
+.span {
+  margin-left: 10px;
+}

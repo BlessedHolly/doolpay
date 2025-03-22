@@ -1,0 +1,16 @@
+.container {
+  margin-inline: 10vw;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-inline: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-inline: 1vw;
+  }
+}
