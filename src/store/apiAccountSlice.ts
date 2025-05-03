@@ -66,6 +66,7 @@ const apiAccountSlice = createApi({
 });
 
 export default apiAccountSlice;
+
 export const {
   useGetProfileQuery,
   useRegistrationProfileMutation,
