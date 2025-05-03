@@ -20,5 +20,4 @@ const apiCoinsSlice = createApi({
 });
 
 export default apiCoinsSlice;
-
 export const { useGetCoinsQuery } = apiCoinsSlice;
